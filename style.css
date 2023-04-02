@@ -72,7 +72,7 @@ header .navigation li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/bg.jpg);
+    background-image: url("bg.jpg");
     background-size: cover;
 }
 .banner .content{
@@ -176,7 +176,7 @@ section{
 }
 .col-expert{
     flex-basis: 22%;
-    min-width: 200px;
+    width: 200px;
 }
 .col-expert img{
     width: 100%;
@@ -190,7 +190,7 @@ section{
 
 /* <!-- ===================TESTIMONIAL SECTION================ --> */
 section.testimonials{
-    background: url(images/bg2.jpg);
+    background: url("bg2.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -231,7 +231,7 @@ section.testimonials h2.titletext ,p{
 
 /* <!-- ===================CONTACT SECTION================ --> */
 .contact{
-    background: url(images/bg3.jpg);
+    background: url("bg3.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -332,14 +332,14 @@ section.testimonials h2.titletext ,p{
         position: relative;
         width: 40px;
         height: 40px;
-        background: url(images/menu.png);
+        background: url("menu1.jpg");
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
     }
     .menutoggle.active{
-        background: url(images/close.png);
+        background: url("close.png");
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: center;
@@ -372,4 +372,17 @@ section.testimonials h2.titletext ,p{
         font-size: 2.1em;
     }
   }
-
+  #btn{
+    position: relative;
+    animation-name: cod;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes cod {
+    from{
+background-color: red;
+    }
+    to{
+background-color: yellow;
+    }
+  }
